@@ -1,0 +1,59 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        <style>
+            .text-caption {
+                width: 150px;
+            }
+            .text-value {
+                width: 350px;
+            }
+            .cotainer-info {
+                position: fixed;
+                left: 50%;
+                top:50%;
+                transform: translate(-50%, -60%);
+                width: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card cotainer-info">
+            <div class="card-title">
+                Данные о погоде в Тюмени
+            </div>
+            <div class="card-body">
+                            <div>
+                                <span class="text-caption">Долгота: </span>
+                                <span class="text-value"><%= lon %></span>
+                            </div>
+                            <div>
+                                <span class="text-caption">Широта: </span>
+                                <span class="text-value"><%= lat %></span>
+                            </div>
+                            <div>
+                                <span class="text-caption">Температура (°C): </span>
+                                <span class="text-value"><%= temp %></span>
+                            </div>
+                            <div>
+                                <span class="text-caption">Ощущаемая температура (°C): </span>
+                                <span class="text-value"><%= feels_like %></span>
+                            </div>
+                            <div>
+                                <span class="text-caption">Погодное описание: </span>
+                                <span class="text-value"><%= condition %></span>
+                            </div>
+                            <div>
+                                <span class="text-caption">Скорость ветра (в м/с): </span>
+                                <span class="text-value"><%= wind_speed %></span>
+                            </div>
+                                <div>
+                                <span class="text-caption">Фаза луны: </span>
+                                <span class="text-value"><%= moon_code %></span>
+                                </div>
+            </div>
+        </div>
+    </body>
+</html>
